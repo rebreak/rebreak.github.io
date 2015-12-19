@@ -1,11 +1,5 @@
 <!doctype html>
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion">
+<html class="theme-next   use-motion ">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -38,7 +32,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="hexo,随笔," />
@@ -50,7 +44,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
 
@@ -80,16 +74,10 @@
 
 
 <script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Pisces',
-    sidebar: '[object Object]',
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 0,
-      author: '博主'
-    }
+    scheme: 'Mist',
+    sidebar: 'always',
+    motion: true
   };
 </script>
 
@@ -98,6 +86,15 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
   
 
 
@@ -105,12 +102,7 @@
 
 
 
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-column page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -174,7 +166,6 @@
 
       
       
-      
     </ul>
   
 
@@ -186,9 +177,8 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
+        <div id="content" class="content">
+          
 
   <div id="posts" class="posts-expand">
     
@@ -219,10 +209,7 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
+            发表于
             <time itemprop="dateCreated" datetime="2015-12-11T02:04:37+08:00" content="2015-12-11">
               2015-12-11
             </time>
@@ -230,11 +217,7 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
+              &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/hexo/" itemprop="url" rel="index">
@@ -255,26 +238,24 @@
 
           
 
-          
-          
         </div>
       </header>
     
 
 
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body">
 
       
       
 
       
-        <p>这是我写的第一篇博客吧，以前就很想尝试记录自己的学习心得和一些感想，不过都因为太懒而没有坚持下来，那么一切就从今天开始吧。</p>
+        <span itemprop="articleBody"><p>这是我写的第一篇博客吧，以前就很想尝试记录自己的学习心得和一些感想，不过都因为太懒而没有坚持下来，那么一切就从今天开始吧。</p>
 <hr>
 <h2 id="1-_u5148_u8C08_u8C08HEXO_u5427"><a href="#1-_u5148_u8C08_u8C08HEXO_u5427" class="headerlink" title="1.先谈谈HEXO吧"></a>1.先谈谈HEXO吧</h2><p>整个安装过程呢是按照网上的介绍做的，不过有几个坑需要说明下，由于hexo的版本很新，所以在配置文件_config.yml最后的配置是这样的<br><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">deploy</span>:</span><br><span class="line">  <span class="typedef"><span class="keyword">type</span>: git</span></span><br></pre></td></tr></table></figure></p>
 <p>如果填github版权会无效的，在博客目录下执行命令npm install hexo-deployer-git –save 即可。</p>
 <p>再说说我的hexo主题，当然是推荐<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">iissman</a>的pisces了，虽然没有正式发布，不过对于我来说已经足够用了。</p>
 <h2 id="2-_u5173_u4E8E_u6211_u7684_u535A_u5BA2"><a href="#2-_u5173_u4E8E_u6211_u7684_u535A_u5BA2" class="headerlink" title="2.关于我的博客"></a>2.关于我的博客</h2><p>作为一个将要成为程序员的人，博客重在自己的学习笔记和心得，内容是最重要的，所以在整体的主题修饰上面暂时就保持这个样子就好，希望可以写出内容高质量的博客。就先这样吧，早安，西安。</p>
-
+</span>
       
     </div>
 
@@ -322,19 +303,21 @@
   </div>
 
 
-          </div>
-          
+        </div>
+
+        
 
 
-          
+        
   <div class="comments" id="comments">
     
   </div>
 
 
-        </div>
+      </div>
+
+      
         
-          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -362,12 +345,10 @@
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="https://avatars1.githubusercontent.com/u/32269?v=3&s=460"
-               alt="rebreak" />
+          <img class="site-author-image" src="https://avatars1.githubusercontent.com/u/32269?v=3&s=460" alt="rebreak" itemprop="image"/>
           <p class="site-author-name" itemprop="name">rebreak</p>
-          <p class="site-description motion-element" itemprop="description">Never Grow Old</p>
         </div>
+        <p class="site-description motion-element" itemprop="description">Never Grow Old</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -440,8 +421,7 @@
   </aside>
 
 
-        
-      </div>
+      
     </main>
 
     <footer id="footer" class="footer">
@@ -463,7 +443,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
+    NexT.Mist
   </a>
 </div>
 
@@ -475,48 +455,39 @@
     <div class="back-to-top"></div>
   </div>
 
-  
-
-
-  
-
-
-
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+  
 
+  
+    
+    
+
+  
+
+
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
-
-
-
   
   
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
 
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
-
-
-
-  
-  
-<script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.0"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {
@@ -650,7 +621,7 @@
 
     $('.post-toc a').on('click', function (e) {
       e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var targetSelector = escapeSelector(this.getAttribute('href'));
       var offset = $(targetSelector).offset().top;
       hasVelocity ?
         html.velocity('stop').velocity('scroll', {
@@ -663,12 +634,11 @@
     });
 
     // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
+    motionMiddleWares.sidebar = function () {
       var $tocContent = $('.post-toc-content');
-
       if (CONFIG.sidebar === 'post') {
         if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
+          displaySidebar();
         }
       }
     };
@@ -677,20 +647,7 @@
 
 
 
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
-
-
-
-  
-
-
-
-  
-
-
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
 
   
   
@@ -721,7 +678,6 @@
 
   
   
-
 
 </body>
 </html>
